@@ -14,7 +14,7 @@ source code location
 
 This docker image uses a directory of its host computer as the storage for its build process.
 This folder is accessed at '/workdir' inside the build container.
-For ease of use and validity of the same paths from host and container, we place
+For ease of use and validity of the same paths from host and container, we
 store our code at that same location at '/workdir'.
 
 To clone your copy::
@@ -22,7 +22,12 @@ To clone your copy::
   cd /
   git clone https://github.com/navdata-net/workdir.git
 
-This provides you with:
+Inside workdir, the navdata.net setup adds several additional git repositories.
+When you are working with navdata.net, prefer to execut your git commands from
+the /workdir folder to avoid any ambiguity reagrding which repository your action
+is meant to execute on.
+
+navdata.net workdir provides you with:
 
 
 folder dev & prod
