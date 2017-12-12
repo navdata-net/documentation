@@ -42,17 +42,28 @@ fetchrepos.sh
 ''''''''''''''
 
 Retrieve and/or update all external source code, namely poky and additional poky
-layers into the /workdir folder.
+layers into the /workdir folder::
+
+  cd /workdir
+  ./fetchrepos.sh
 
 
 rundocker.sh
 ''''''''''''
 
-Start Yocto provided build environment.
+Start Yocto provided build environment::
+
+  cd /workdir
+  ./rundocker.sh
 
 
-dev/bake.sh
-'''''''''''
+bake.sh
+'''''''
 
-Execute a build of the navdata.net base station image.
+Execute a build of the navdata.net base station image from within docker console
+started above::
+
+  cd /workdir/dev
+  ./bake.sh
+
 Expect up to 50GB storage space to be utilized.
