@@ -17,7 +17,7 @@ directly `on GitHub`_
 .. toctree::
    :maxdepth: 2
 
-   about-navdatanet
+   about
    development/index
 
 
