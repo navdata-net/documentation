@@ -6,7 +6,7 @@ Poky
 
 We base our image on the Poky distribution developed by the Yocto project.
 To avoid issues between the developers working environment and the requirements
-of cross compiling, we make use of Yoctos docker based build tool "CROPS".
+of cross compiling, we make use of Yoctos docker based build tool `crops/poky`_.
 
 
 source code location
@@ -67,3 +67,6 @@ started above::
   ./bake.sh
 
 Expect up to 50GB storage space to be utilized.
+
+
+.. _crops/poky: https://github.com/crops/poky-container
