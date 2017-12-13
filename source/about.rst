@@ -37,7 +37,7 @@ Software
 ''''''''
 
  - `Yocto Project Poky`_
- - `RTKLIB`_ `edition by RTKEXPLORER`_
+ - `RTKLIB`_ (`edition by RTKEXPLORER`_)
  - `PylonGPS`_
  - `NTP server`_
 
@@ -46,7 +46,7 @@ into a ready to run RTK base station streaming correction data to a PylonGPS cas
 
 .. _Raspberry Pi: https://en.wikipedia.org/wiki/Raspberry_Pi#Specifications
 .. _ublox M8T: https://www.u-blox.com/en/product/neolea-m8t-series
-.. _Yoco Project Poky: https://www.yoctoproject.org/tools-resources/projects/poky
+.. _Yocto Project Poky: https://www.yoctoproject.org/tools-resources/projects/poky
 .. _RTKLIB: http://www.rtklib.com/
 .. _edition by RTKEXPLORER: https://github.com/rtklibexplorer/RTKLIB
 .. _PylonGPS: https://github.com/charlesrwest/pylonGPS
