@@ -28,5 +28,13 @@ Preparing your development environment
    development_setup
 
 
+Working with navdata.net
+========================
+
+.. toctree::
+   :maxdepth: 2
+
+   navdatanet_devtools
+
 
 .. _crops/poky: https://github.com/crops/poky-container

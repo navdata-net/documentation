@@ -4,7 +4,7 @@ Development environment setup
 Clone / update workdir repository
 ---------------------------------
 
-Switch to yocto user as prepared in `OS setup`_, clone your copy::
+Switch to yocto user as prepared in :doc:`<os_setup>`, clone your copy::
 
   cd /
   git clone https://github.com/navdata-net/workdir.git
@@ -33,5 +33,3 @@ container and initiate bitbake inside it::
   ./rundocker.sh
   cd /workdir/dev
   ./bake.sh
-
-.. OS setup: os_setup
