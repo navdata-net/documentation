@@ -33,3 +33,7 @@ container and initiate bitbake inside it::
   ./rundocker.sh
   cd /workdir/dev
   ./bake.sh
+
+Any ditbake commands should be run from within the docke build container. You can
+verify operating from the container by checking your username, which should be
+"pokyuser".
