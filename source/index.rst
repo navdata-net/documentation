@@ -9,6 +9,8 @@ Welcome to navdata.net
    :maxdepth: 2
 
    about
+   hardware/index
+   configuration/index
    development/index
 
 
