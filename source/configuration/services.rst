@@ -13,8 +13,8 @@ and general configuration information to allow supporters to contribute data by
 operating community basestations at low cost.
 
 
-High level usage and overview
------------------------------
+High level components
+---------------------
 
 User
 """"
