@@ -54,5 +54,77 @@ data and provides it on the local IP port::
 transceiver
 -----------
 
-transceiver connects to the local port :3141 and forwards the data to
-pylon.navdata.net
+It is intended to run multiple transceiver instances for broadcasting different
+data. Each instance has a distinct name.
+
+
+transceiver naming convention
+"""""""""""""""""""""""""""""
+
+The transceiver name is made up of 5 components of fixed length, the digits
+representing the field number and the number of digits the field length::
+
+  1_222222_333333_4_55
+
+
+field 1
+'''''''
+
+1 character indicating the basestation designation as::
+
+  D : development (may intentionally send wrong data)
+  T : test (unreliable)
+  C : community (essential reliabililty and quality)
+  U : university / education (high reliability and quality)
+  B : business (high reliability and quality)
+  G : government (official, professional basestation)
+
+
+field 2
+'''''''
+
+6 digits indicating latitude of the basestation antenna prefixed with 0s if
+needed of which the last 3 digits are decimals.
+Latitude 29.979235 will be represented as 029979.
+
+
+field 3
+'''''''
+
+6 digits indicating longitude of the basestation antenna prefixed with 0s if
+needed of which the last 3 digits are decimals.
+Longitude 31.134202 will be represented as 031134.
+
+
+field 4
+'''''''
+
+1 character to distinguish if more than one 1 basestation would otherwise have
+the same name.
+
+
+field 5
+'''''''
+
+2 characcters indicating data format::
+
+  RT : RTCM v3 (RTCM_V3)
+  UB : u-blox (RAW)
+
+
+examples
+''''''''
+
+T_047173_008518_A_UB
+T_047173_008518_A_RT
+
+
+
+standard transceiver instances
+""""""""""""""""""""""""""""""
+
+RAW
+'''
+
+transceiver connects to the local rtkrcv process on logging port :3141 and
+forwards the raw receiver module data to pylon.navdata.net
