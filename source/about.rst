@@ -19,7 +19,7 @@ Users
 
 The project shall be valuable for the public at large serving diverse purposes.
 Improving the location precision for mobile phones, vehicles, farmers machinery,
-drone pilots or other navigation purposes.
+drone pilots or other location and navigation purposes.
 
 
 Current goal
@@ -44,6 +44,43 @@ Software
 into a ready to run RTK base station streaming correction data to a PylonGPS caster.
 
 
+Resources
+---------
+
+Documentation
+'''''''''''''
+
+Accessible on `Read the Docs`_ and maintained at https://github.com/navdata-net/documentation
+
+
+Installer
+'''''''''
+
+Maintained on github at https://github.com/navdata-net/installer
+
+Used to develop the navdata.net configuration and for installations not using
+the navdata.net images for reference hardware. The resources developed in the
+installer repository are reused in the yocto layer repository.
+
+
+Yocto workdir
+'''''''''''''
+
+Maintained on github at https://github.com/navdata-net/workdir
+
+Used to simplify working with yocto, develop the navdata.net yocto image configuration
+and make it easy to compile and develop the navdata.net image.
+
+
+Yocto layer
+'''''''''''
+
+Maintained on github at https://github.com/navdata-net/meta-navdatanet
+
+Used to develop the recipes for software navdata.net needs to add to yocto.
+
+
+
 .. _Raspberry Pi: https://en.wikipedia.org/wiki/Raspberry_Pi#Specifications
 .. _ublox M8T: https://www.u-blox.com/en/product/neolea-m8t-series
 .. _Yocto Project Poky: https://www.yoctoproject.org/tools-resources/projects/poky
@@ -51,3 +88,5 @@ into a ready to run RTK base station streaming correction data to a PylonGPS cas
 .. _edition by RTKEXPLORER: https://github.com/rtklibexplorer/RTKLIB
 .. _PylonGPS: https://github.com/charlesrwest/pylonGPS
 .. _NTP server: http://www.openntpd.org/
+.. _Read the Docs: http://readthedocs.io/
+
