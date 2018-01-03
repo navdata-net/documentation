@@ -1,5 +1,5 @@
-Configration and structure of navdata.net
-=========================================
+Configuration and structure of navdata.net
+==========================================
 
 .. toctree::
    :maxdepth: 2
