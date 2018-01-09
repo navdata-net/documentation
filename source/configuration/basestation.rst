@@ -94,7 +94,6 @@ field 3
 
 7 digits indicating height of the basestation antenna prefixed with 0s if
 needed of which the last 3 digits are decimals.
-Longitude 31.134202 will be represented as 031134.
 
 
 field 4
