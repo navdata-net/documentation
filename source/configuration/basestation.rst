@@ -64,7 +64,7 @@ transceiver naming convention
 The transceiver name is made up of 5 components of fixed length, the digits
 representing the field number and the number of digits the field length::
 
-  1_222222_333333_4_55
+  1_22_333333_4
 
 
 field 1
@@ -83,15 +83,16 @@ field 1
 field 2
 '''''''
 
-6 digits indicating latitude of the basestation antenna prefixed with 0s if
-needed of which the last 3 digits are decimals.
-Latitude 29.979235 will be represented as 029979.
+2 characcters indicating data format::
+
+  RT : RTCM v3 (RTCM_V3)
+  UB : u-blox (RAW)
 
 
 field 3
 '''''''
 
-6 digits indicating longitude of the basestation antenna prefixed with 0s if
+7 digits indicating height of the basestation antenna prefixed with 0s if
 needed of which the last 3 digits are decimals.
 Longitude 31.134202 will be represented as 031134.
 
@@ -99,24 +100,13 @@ Longitude 31.134202 will be represented as 031134.
 field 4
 '''''''
 
-1 character to distinguish if more than one 1 basestation would otherwise have
-the same name.
+Custom / personalized string
 
 
-field 5
+example
 '''''''
 
-2 characcters indicating data format::
-
-  RT : RTCM v3 (RTCM_V3)
-  UB : u-blox (RAW)
-
-
-examples
-''''''''
-
-T_047173_008518_A_UB
-T_047173_008518_A_RT
+D_UB_0480.182_MyBase
 
 
 
