@@ -73,6 +73,7 @@ field 1
 1 character indicating the basestation designation as::
 
   D : development (may intentionally send wrong data)
+  M : mobile / location not static
   T : test (unreliable)
   C : community (essential reliabililty and quality)
   U : university / education (high reliability and quality)
