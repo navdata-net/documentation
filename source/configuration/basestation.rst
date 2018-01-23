@@ -39,6 +39,7 @@ data. It is configured to provide several network ports on the local IP::
   :3134 - monitoring port (-m option)
   :3135 - tcpsrvr solution (nmea format)
   :3136 - tcpsrvr solution (llh format)
+  :3137 - str2str passthrough rover / raw (rtcm3 format)
 
 
 str2str
