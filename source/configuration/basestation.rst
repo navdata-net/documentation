@@ -33,22 +33,19 @@ tty. rtkrcv continuously computes the basestations location from the satellite
 data. It is configured to provide several network ports on the local IP::
 
   :3130 - telnet console (-p option)
-  :3131 - passthrough log rover / raw (u-blox format)
-  :3132 - passthrough log base / raw
-  :3133 - passthrough log corr / raw
   :3134 - monitoring port (-m option)
-  :3135 - tcpsrvr solution (nmea format)
-  :3136 - tcpsrvr solution (llh format)
 
 
 str2str
 -------
 
-str2str is used to convert the u-blox receiver data format into standardised
-RTCMv3 format. str2str connects to rtkrcv on port :3131 to retrieve the receiver
-data and provides it on the local IP port::
+str2str is used to shield rtkrcv from user acces and convert the u-blox receiver
+data format into standardised RTCMv3 format. ::
 
-  :3141 - passthrough log rover / raw (RTCMv3 format)
+  :3131 - passthrough receiver data / raw (u-blox format)
+  :3132 - passthrough receiver data / RTCM3
+  :3133 - TCM3 antenna location message 1006
+  :3141 - integrated RTCM 3 location and raw data
 
 
 transceiver
@@ -64,7 +61,7 @@ transceiver naming convention
 The transceiver name is made up of 5 components of fixed length, the digits
 representing the field number and the number of digits the field length::
 
-  1_22_333333_4
+  1_22_33333333333333
 
 
 field 1
@@ -93,20 +90,13 @@ field 2
 field 3
 '''''''
 
-7 digits indicating height of the basestation antenna prefixed with 0s if
-needed of which the last 3 digits are decimals.
-
-
-field 4
-'''''''
-
-Custom / personalized string
+14 characters custom personalized station name string
 
 
 example
 '''''''
 
-D_UB_0480.182_MyBase
+D_UB_MyBase
 
 
 
