@@ -15,5 +15,5 @@ In summary::
 
 
 
-.. u-blox receivers: https://www.u-blox.com/en/position-time
-.. Configuring the GPS receiver: https://rtklibexplorer.wordpress.com/2016/01/30/configuring-the-gps-receiver-ublox-eval-software/
+.. _u-blox receivers: https://www.u-blox.com/en/position-time
+.. _Configuring the GPS receiver: https://rtklibexplorer.wordpress.com/2016/01/30/configuring-the-gps-receiver-ublox-eval-software/
