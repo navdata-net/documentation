@@ -4,8 +4,8 @@ Configuring and using GNSS receivers for navadata.net
 u-blox
 ------
 
-By using rtklibexplorers edition of RTKLIB we get enhanced support for`u-blox receivers`_.
-On rtklibexplorers website we can find an article about`Configuring the GPS receiver`_ for use with RTKLIB.
+By using rtklibexplorers edition of RTKLIB we get enhanced support for `u-blox receivers`_.
+On rtklibexplorers website we can find an article about `Configuring the GPS receiver`_ for use with RTKLIB.
 
 In summary::
 
