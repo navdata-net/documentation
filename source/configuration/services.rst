@@ -23,17 +23,17 @@ A user of navdata.net uses a local device, equipped with or connected to a
 satellite navigation receiver (eg. GPS device). The users intention is to use
 data from navdata.net to improve their location precision and reliability.
 
-The navdata.net data is retrieved through a PylonGPS client (transceiver) and
-handed over to evaluation by RTKlib. RTKlib combines it with the local receivers
-data to compute improved precision location information which is provided to
-client software (eg in the form of an emulated GPS device).
+The navdata.net data is retrieved through a navdata.net client and handed over
+to evaluation by RTKlib. RTKlib combines it with the local receivers data to
+compute improved precision location information which is provided to client
+software (differential GPS).
 
 
 Broadcaster and catalog
 """""""""""""""""""""""
 
-The users navdata.net client (transceiver) connects to navdata.net broadcasters
-to identify and subscribe to the basestation closest to the user (best precision).
+The users navdata.net client connects to navdata.net broadcasters to identify
+and subscribe to the basestation closest to the user (best precision).
 The broadcaster sends subscribed navigation data to the client.
 
 

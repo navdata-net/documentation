@@ -38,7 +38,6 @@ Software
 
  - `Yocto Project Poky`_
  - `RTKLIB`_ (`edition by RTKEXPLORER`_)
- - `PylonGPS`_
  - `NTP server`_
 
 into a ready to run RTK base station streaming correction data to a PylonGPS caster.
@@ -86,7 +85,6 @@ Used to develop the recipes for software navdata.net needs to add to yocto.
 .. _Yocto Project Poky: https://www.yoctoproject.org/tools-resources/projects/poky
 .. _RTKLIB: http://www.rtklib.com/
 .. _edition by RTKEXPLORER: https://github.com/rtklibexplorer/RTKLIB
-.. _PylonGPS: https://github.com/charlesrwest/pylonGPS
 .. _NTP server: http://www.openntpd.org/
 .. _Read the Docs: http://readthedocs.io/
 
